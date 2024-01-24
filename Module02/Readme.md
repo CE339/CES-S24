@@ -5,3 +5,5 @@ There are two factories on the Momus's River (A and B). Each emits two types of 
 It costs $15 to process a ton of factory A waste, and each ton processed reduces the amount of pollutant 1 by 0.10 ton and the amount of pollutant 2 by 0.4 ton. It costs $10 to process a ton of factory B waste, and each ton processed will reduce the amount of pollutant 1 by 0.20 ton and the amount of pollutant 2 by 0.16 ton.
 
 The state wants to reduce the amount of pollutant 1 in the river by at least 30 tons and of pollutant 2 in the river by at least 40 tons. Find the minimum cost of reducing pollution by the desired amounts
+
+***For you to be able to run the Abstract Model Script in Google Colab you will need to download and save the data files riverpol.dat and riverpol3factories.dat in your working directory.
