@@ -1,0 +1,40 @@
+set N := ATL DAL CHI LAX NYC GAI EIL PHX;
+set A := (ATL,DAL) (ATL,CHI) (ATL,NYC) 
+         (DAL,ATL) (DAL,CHI) (DAL,LAX) (DAL,NYC) 
+         (EIL,ATL) (EIL,CHI) (EIL,LAX) (EIL,NYC) 
+         (GAI,ATL) (GAI,DAL) (GAI,NYC) (PHX,ATL) 
+         (PHX,CHI) (PHX,DAL) (PHX,LAX);
+
+param: supply :=
+  ATL -150.0
+  CHI -200.0
+  DAL -300.0
+  EIL  200.0
+  GAI  200.0
+  LAX -200.0
+  NYC -250.0
+  PHX  700.0;
+
+param:      c     ub:=
+  ATL DAL  2.0   200.0  
+  ATL CHI  7.0   200.0
+  ATL NYC  4.0   200.0
+     
+  DAL ATL  2.0   200.0
+  DAL CHI  4.0   200.0
+  DAL LAX  5.0   200.0
+  DAL NYC  6.0   200.0
+     
+  EIL ATL  5.0   200.0
+  EIL CHI  1.0   200.0
+  EIL LAX  7.0   200.0
+  EIL NYC  8.0   200.0
+     
+  GAI ATL  2.0   200.0
+  GAI DAL  6.0   200.0
+  GAI NYC  7.0   200.0
+     
+  PHX ATL  7.0   200.0
+  PHX CHI  6.0   200.0
+  PHX DAL  3.0   200.0
+  PHX LAX  3.0   200.0; 
