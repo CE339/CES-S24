@@ -1,0 +1,32 @@
+set N := SOURCE SF LA NY CHI DAL SINK;
+
+set A := (SOURCE,SF) (SOURCE,LA) (SOURCE,SINK)
+         (SF,NY) (SF,CHI) (SF,DAL) 
+         (LA,CHI) (LA,DAL) 
+         (NY,SINK) (CHI,SINK) (DAL,SINK);
+
+param: supply :=
+  SOURCE 1150.0
+  SF        0.0
+  LA        0.0
+  NY        0.0
+  CHI       0.0
+  DAL       0.0
+  SINK -1150.0;
+
+param:           c   lb     ub:=
+  SOURCE SF     2.0 300.0  500.0  
+  SOURCE LA     2.0 500.0  700.0
+  SOURCE SINK   0.0   0.0 5000.0
+     
+  SF NY         2.5   0.0  500.0  
+  SF CHI        1.7   0.0  500.0  
+  SF DAL        1.8   0.0  500.0  
+
+  LA CHI        1.8   0.0  500.0  
+  LA DAL        1.4   0.0  500.0  
+
+  NY SINK      -5.0 300.0  400.0  
+  CHI SINK     -3.0 200.0  400.0  
+  DAL SINK     -4.0 250.0  350.0;  
+  
